@@ -141,7 +141,8 @@ const routes = [
     name: 'admin_view_attendance_page',
     component: admin_view_attendance_page
   },
-
+  
+ /* --------------admin (omar)----------------- */
  
 ]
 
