@@ -2,53 +2,59 @@
 <head>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
 </head>
+<!--
+written By : sumit kumar
+-->
 
 <div class="container">
 
-<div class="row">
+    	<div class="row" >
 
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h6 class="panel-title">Teachers Salary</h6>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h6 class="panel-title">Teachers</h6>
 
-    </div>
+					</div>
 
-    <table class="table table-hover table-striped table-bordered" id="dev-table">
-      <thead>
+					<table class="table table-hover table-striped table-bordered" id="dev-table">
+            <thead>
 
-        <tr>
-          <th>Teacher's Name</th>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Salary</th>
+                    <th>Joining Date</th>
+                    <th>Actions</th>
 
-          <th>Salary</th>
+                </tr>
+            </thead>
+              <tr>
+                  <td> {}</td>
+                  <td>{}</td>
+                  <td>${}</td>
+                  <td>{}</td>
+                  <td><a class="btn btn-primary btn-xs" href="{% url 'update-teacher' t.id  %}"  ><span class="glyphicon glyphicon-edit"></span></a>
+                  <a class="btn btn-danger btn-xs" href="{% url 'delete-teacher-from-school' t.id  %}"  ><span class="glyphicon glyphicon-trash"></span></a></td>
 
-        </tr>
-      </thead>
-     
-      <tr>
-        <td> {}</td>
-        <td>${}</td>
-      </tr>
+              </tr>
 
-    </table>
-  </div>
+					</table>
+				</div>
 
 
-</div>
-</div>
-  
+				</div>
+			</div>
 </template>
-<style media="screen">
-  a:link {
-    text-decoration: none;
-  }
 
-  h6 {
-    text-align: center;
-  }
-
-  .row {
-    margin: 100px;
-  }
-</style>
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+    h6{
+      text-align:center;
+    }
+    .row{
+      margin:100px;
+    }
+  </style>
