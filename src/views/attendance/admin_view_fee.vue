@@ -1,14 +1,38 @@
-{% extends 'school/adminbase.html' %}
-
-
-
-{% block content %}
-
+<template>
 <head>
 
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+<div class="container">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">FEE of class {} </h6>
+      </div>
+      <table class="table table-hover table-striped table-bordered" id="dev-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Roll</th>
+            <th>Contact</th>
+            <th>Dues</th>
+          </tr>
+        </thead>
+       
+        <tr>
+          <td>{}</td>
+          <td>{}</td>
+          <td>{}</td>
+          <td>{}</td>
+        </tr>
+      
+      </table>
+    </div>
+  </div>
+</div>
+</template>
+
 
   <style media="screen">
     a:link {
@@ -23,34 +47,3 @@
       margin: 100px;
     }
   </style>
-
-</head>
-<div class="container">
-  <div class="row">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h6 class="panel-title">FEE of class {{cl}} </h6>
-      </div>
-      <table class="table table-hover table-striped table-bordered" id="dev-table">
-        <thead>
-          <tr>
-            <th>Student Name</th>
-            <th>Roll</th>
-            <th>Contact</th>
-            <th>Dues</th>
-          </tr>
-        </thead>
-        {%for f in feedetails %}
-        <tr>
-          <td>{{f.get_name}}</td>
-          <td>{{f.roll}}</td>
-          <td>{{f.mobile}}</td>
-          <td>{{f.fee}}</td>
-        </tr>
-        {%endfor%}
-      </table>
-    </div>
-  </div>
-</div>
-
-{% endblock content %}
