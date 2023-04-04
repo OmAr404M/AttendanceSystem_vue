@@ -1,69 +1,54 @@
-{% extends 'school/adminbase.html' %}
-
-
-
-{% block content %}
-
+<template>
 <head>
 
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-  <style media="screen">
-    a:link {
-      text-decoration: none;
-    }
-
-    h6 {
-      text-align: center;
-    }
-
-    .row {
-      margin: 100px;
-    }
-  </style>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 </head>
 
-
-
-
-
 <div class="container">
 
-  <div class="row">
+<div class="row">
 
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h6 class="panel-title">Teachers Salary</h6>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Teachers Salary</h6>
 
-      </div>
-
-      <table class="table table-hover table-striped table-bordered" id="dev-table">
-        <thead>
-
-          <tr>
-            <th>Teacher's Name</th>
-
-            <th>Salary</th>
-
-          </tr>
-        </thead>
-        {% for t in teachers %}
-        <tr>
-          <td> {{t.get_name}}</td>
-          <td>${{t.salary}}</td>
-        </tr>
-
-        {% endfor %}
-      </table>
     </div>
 
+    <table class="table table-hover table-striped table-bordered" id="dev-table">
+      <thead>
 
+        <tr>
+          <th>Teacher's Name</th>
+
+          <th>Salary</th>
+
+        </tr>
+      </thead>
+     
+      <tr>
+        <td> {}</td>
+        <td>${}</td>
+      </tr>
+
+    </table>
   </div>
+
+
 </div>
+</div>
+  
+</template>
+<style media="screen">
+  a:link {
+    text-decoration: none;
+  }
 
+  h6 {
+    text-align: center;
+  }
 
-
-{% endblock content %}
+  .row {
+    margin: 100px;
+  }
+</style>
