@@ -1,9 +1,20 @@
+<template>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>SMS - Django</title>
+</head>
+
+<body>
+</body>
+
+</html>
+ 
+  
+</template>
+
   <style media="screen">
     .jumbotron {
       margin-top: 0px;
@@ -19,14 +30,3 @@
     }
   </style>
 
-</head>
-
-<body>
-  {% include "school/navbar.html" %}
-  {%block content%}
-
-  {%endblock content%}
-  {% include "school/footer.html" %}
-</body>
-
-</html>
