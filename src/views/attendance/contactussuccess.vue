@@ -1,13 +1,37 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en" dir="ltr">
+<template>
+  <!DOCTYPE html>
+  {% load static %}
+  <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <title>SMS - Django</title>
+    <title>SMS - Django</title>
+
+  </head>
+
+  <body>
+
+    {% include "school/navbar.html" %}
+    <br><br>
+    <div class="jumbotron">
+      <h1 class="display-4">Your message sent successfully !</h1>
+      <p class="lead">We will respond to your feedback soon</p>
+      <hr class="my-4">
+      <p>Check other features of website !</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+      </p>
+    </div>
+
+    {% include "school/footer.html" %}
+  </body>
+
+  </html>
+</template>
+
   <style media="screen">
     .jumbotron {
       margin-bottom: 0px;
@@ -17,24 +41,3 @@
       text-align: center;
     }
   </style>
-
-</head>
-
-<body>
-
-  {% include "school/navbar.html" %}
-  <br><br>
-  <div class="jumbotron">
-    <h1 class="display-4">Your message sent successfully !</h1>
-    <p class="lead">We will respond to your feedback soon</p>
-    <hr class="my-4">
-    <p>Check other features of website !</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
-    </p>
-  </div>
-
-  {% include "school/footer.html" %}
-</body>
-
-</html>
